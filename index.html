@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Twitch Viewer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a Free Code Camp Project called Twitch Viewer">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!--display section-->
+      <div class="container"><i class="fa fa-twitch fa-5x"></i></div>
+      <div class="container">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#all" data-toggle="tab"><h4 class = "text-center text-primary"><strong>All</strong></h4></a></li>
+          <li><a href="#online" data-toggle="tab"><h4 class = "text-success"><strong>Online</strong></h4></a></li>
+          <li><a href="#offline" data-toggle="tab"><h4 class = "text-danger"><strong>Offline</strong></h4></a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active jumbotron" id="all">
+            <div class="input-group col-xs-6">
+              <input class="form-control searchHere" type="text">
+              <span class="input-group-btn"><button type = "submit" class="btn btn-primary submitButton"><i class = "fa fa-search"></i></button></span>
+            </div>
+            <ul id="allStreamers"></ul>
+          </div>
+          <div class="tab-pane jumbotron" id="online">
+            <ul id="onlineStreamers"></ul>
+          </div>
+          <div class="tab-pane jumbotron" id="offline">
+            <ul id="offlineStreamers"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
